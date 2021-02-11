@@ -199,6 +199,5 @@ class vec {
 	}
 };
 
-using namespace std;
 
 int main() {}
