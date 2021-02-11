@@ -15,7 +15,7 @@ class vec {
 			return (val == nd->val && next == nd->next && last == nd->last);
 		}
 		bool operator!=(const vec_node *nd) {
-			return (val != nd->val && next != nd->next && last != nd->last);
+			return (val != nd->val || next != nd->next || last != nd->last);
 		}
 	} *root, *tail, *tmp;
 
