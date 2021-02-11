@@ -118,6 +118,11 @@ class vec {
 		while(first != last)
 			this->push_back(*first++);
 	}
+	vec(size_type _size, T val=T()) {
+		tail = root = new vec_node(T()); tmp = nullptr;
+		while(_size--)
+			this->push_back(val);
+	}
 	vec(const vec<T>& vc) {
 		this->vec();
 		for(auto& i : vc)
@@ -193,5 +198,7 @@ class vec {
 		sort(0, this->size(), Cmp);
 	}
 };
+
+using namespace std;
 
 int main() {}
