@@ -165,7 +165,7 @@ class vec {
 	}
 
 	size_type size() {
-		unsigned ret = 0;
+		size_type ret = 0;
 		tmp = root;
 		while(tmp != tail) {
 			tmp = tmp->next;
