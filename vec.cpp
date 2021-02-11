@@ -43,7 +43,7 @@ class vec {
 	}
 	T& operator[](int I) {
 		switch (I < 0) {
-			case T():
+			case true:
 				I = -I;
 				tmp = tail;
 				while(I--)
@@ -59,7 +59,7 @@ class vec {
 	T& at(int I) {
 		try {
 			switch (I < 0) {
-				case T():
+				case true:
 					I = -I;
 					tmp = tail;
 					while(I--) {
